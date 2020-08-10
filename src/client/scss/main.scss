@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+$green: #80bc01;
+$blue: #00d8ff;
+
+$bg-color: #222;
+$color: #ffffff;
+
+$success: lightgreen;
+$danger: tomato;
+
+$dancingScript: 'Dancing Script', Helvetica, sans-serif;
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $bg-color;
+  color: $color;
+}
+
+#app {
+  display: grid;
+  justify-items: center;
+}
+
+h1 {
+  border: $green 3px solid;
+  padding: 15px;
+  position: relative;
+}
+h1:before {
+  position: absolute;
+  content: '';
+  height: 100%;
+  width: 100%;
+  top: 5px;
+  left: 5px;
+  z-index: 1;
+  border: $blue 3px solid;
+}
+
+#img {
+  margin-top: 60px;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#react {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+#express {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+img {
+  height: 250px;
+  width: 250px;
+}
+
+#react {
+  width: 230px !important;
+}
+
+h2 {
+  margin-top: 10rem;
+}
+h2 > .success {
+  color: $success;
+}
+h2 > .danger {
+  color: $danger;
+}
+
+#me {
+  font-family: $dancingScript;
+  font-size: 34px;
+}
+
+.sample {
+  margin-top: 80px;
+}
+#by {
+  color: $blue;
+}
